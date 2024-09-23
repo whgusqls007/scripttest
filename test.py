@@ -3,5 +3,7 @@ import time
 
 print("hello world!")
 os.mkdir("/folder")
-os.mkdir("/folder/hello")
+f = open("/hello.sh", "w")
+f.write('echo "hello world!"')
+f.close()
 time.sleep(100)
