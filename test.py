@@ -10,6 +10,3 @@ print(args.text)
 f = open("hello.txt", "w")
 f.write(args.text)
 f.close()
-
-while True:
-    a = 1
