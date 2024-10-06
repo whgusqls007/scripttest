@@ -2,7 +2,7 @@ from argparse import ArgumentParser, FileType
 from configparser import ConfigParser
 
 parser = ArgumentParser()
-parser.add_argument("text", required=True, type=str)
+parser.add_argument("text", type=str)
 args = parser.parse_args()
 
 print(args.text)
