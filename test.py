@@ -1,4 +1,13 @@
-print("hello world!")
+from argparse import ArgumentParser, FileType
+from configparser import ConfigParser
+
+parser = ArgumentParser()
+parser.add_argument("--text", required=True)
+args = parser.parse_args()
+
+config_parser = ConfigParser()
+
+print(args.text)
 f = open("/folder/hello.txt", "w")
-f.write("hello world!")
+f.write(args.text)
 f.close()
