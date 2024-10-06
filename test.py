@@ -5,8 +5,6 @@ parser = ArgumentParser()
 parser.add_argument("--text", required=True, type=str)
 args = parser.parse_args()
 
-config_parser = ConfigParser()
-
 print(args.text)
 # f = open("/folder/hello.txt", "w")
 f = open("hello.txt", "w")
